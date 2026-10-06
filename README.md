@@ -3,7 +3,17 @@
 Published as a GitHub Pages site at:
 `https://nuvyte.github.io/snapfit/`
 
-It hosts the Snapfit landing page and privacy policy. The app itself is fully offline and never fetches anything from here.
+It hosts the Snapfit landing page, the privacy policy, and `version.json`, which the app reads on launch.
+
+## Forcing or suggesting an update
+```json
+{ "minVersionCode": 2, "latestVersionCode": 2, "message": "A new version of Snapfit is ready." }
+```
+- `minVersionCode`: anyone below this sees a full-screen "Update needed" card they can't dismiss.
+- `latestVersionCode`: anyone below this (but at or above min) gets a tappable toast, at most once a day.
+- `message`: text on the "Update needed" card.
+
+Commit and push; it's live within a few minutes. Players who are offline are never blocked.
 
 - Privacy policy URL for Play Console: `https://nuvyte.github.io/snapfit/privacy-policy.html`
 - The source copy of the policy lives in `../store/privacy-policy.html`; keep the two in sync.
