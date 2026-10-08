@@ -1,10 +1,83 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Snapfit: Brick Puzzle</title>
-<style>body{font-family:system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 20px;line-height:1.6;color:#14243D}h1{font-size:1.6rem}</style>
-</head><body>
-<h1>Snapfit: Brick Puzzle</h1>
-<p>A relaxing brick-filling puzzle for Android. Snap colourful bricks into an empty blueprint, fill every outline, and reveal the hidden picture. 300 levels across 12 worlds, a new Daily Build every day, and endless play after that. Fully offline, no ads, no accounts.</p>
-<p><a href="https://play.google.com/store/apps/details?id=com.nuvyte.snapfit">Get it on Google Play</a> &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy policy</a></p>
-<p>Support: <a href="mailto:nuvyte00@gmail.com">nuvyte00@gmail.com</a></p>
-</body></html>
+<meta name="description" content="Snap colourful bricks into place, fill every outline, and reveal the hidden picture. 300 levels, a new puzzle every day, no ads. For Android.">
+<meta name="theme-color" content="#0E2140">
+<meta property="og:title" content="Snapfit: Brick Puzzle">
+<meta property="og:description" content="Fill the outline. Find the picture. 300 levels and a new puzzle every day.">
+<meta property="og:image" content="https://nuvyte.github.io/snapfit/img/og-1024x500.png">
+<meta property="og:url" content="https://nuvyte.github.io/snapfit/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero wrap">
+  <img class="app-icon" src="img/icon-192.png" alt="" width="96" height="96">
+  <h1 class="logo" aria-label="Snapfit"><span>S</span><span>n</span><span>a</span><span>p</span><span>f</span><span>i</span><span>t</span></h1>
+  <p class="tagline">Fill the outline.<br><em>Find the picture.</em></p>
+  <p class="sub">A relaxing brick puzzle for Android. Snap colourful bricks into place, and when the last one clicks in, the hidden picture appears.</p>
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.nuvyte.snapfit">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.2 2.4c-.3.3-.4.8-.4 1.3v16.6c0 .5.1 1 .4 1.3l9.3-9.6zM14.9 13.4l2.7 2.8-11.2 6.4c-.5.3-1 .3-1.4.1zM18.8 8.5l2.7 1.6c.9.5.9 1.9 0 2.4l-2.7 1.6-3-3zM5 1.3c.4-.2.9-.2 1.4.1l11.2 6.4-2.7 2.8z"/></svg>
+    Get it on Google Play
+  </a>
+  <ul class="facts">
+    <li>300 levels</li><li>12 worlds</li><li>Daily puzzle</li><li>Plays offline</li><li>No ads</li>
+  </ul>
+</header>
+
+<main>
+  <div class="shots" tabindex="0" aria-label="Screenshots">
+    <img src="img/shot-1-drag.webp" alt="Dragging bricks onto a level's outline" width="540" height="960" loading="lazy">
+    <img src="img/shot-2-reveal.webp" alt="A finished level revealing the hidden picture" width="540" height="960" loading="lazy">
+    <img src="img/shot-3-colour.webp" alt="A colour level where each brick must match its colour" width="540" height="960" loading="lazy">
+    <img src="img/shot-4-side.webp" alt="A side-view build where bricks need support" width="540" height="960" loading="lazy">
+    <img src="img/shot-5-hint.webp" alt="A hint showing the next brick in place" width="540" height="960" loading="lazy">
+    <img src="img/shot-6-worlds.webp" alt="The list of 12 worlds" width="540" height="960" loading="lazy">
+    <img src="img/shot-7-home.webp" alt="The home screen with the daily build" width="540" height="960" loading="lazy">
+    <img src="img/shot-8-album.webp" alt="The picture album" width="540" height="960" loading="lazy">
+  </div>
+  <p class="hint">Swipe for more</p>
+
+  <section class="wrap">
+    <h2>Simple to start, surprisingly clever</h2>
+    <div class="grid">
+      <div class="card"><h3><span class="chip" style="--c:#E8473B"></span>300 levels in 12 worlds</h3>
+        <p>A whale, a rocket, a castle, a teapot and over a hundred more pictures to build. Every world adds a new twist.</p></div>
+      <div class="card"><h3><span class="chip" style="--c:#FFC928"></span>A new puzzle every day</h3>
+        <p>The Daily Build gives everyone the same fresh picture each day. Keep your streak going.</p></div>
+      <div class="card"><h3><span class="chip" style="--c:#2F80ED"></span>Endless play</h3>
+        <p>Finish all 300 levels and new pictures keep coming, forever.</p></div>
+      <div class="card"><h3><span class="chip" style="--c:#27AE60"></span>Friendly and fair</h3>
+        <p>Every level is checked by a solver, so every puzzle can be solved. Free undo, hints when you're stuck, no timers and no lives.</p></div>
+      <div class="card"><h3><span class="chip" style="--c:#9B5DE5"></span>Collect and improve</h3>
+        <p>Earn up to 3 stars per level, score points for clean, quick builds, fill your picture album and unlock 16 trophies.</p></div>
+      <div class="card"><h3><span class="chip" style="--c:#14B8A6"></span>Made to relax</h3>
+        <p>Satisfying snaps, gentle sounds, light and dark themes. Plays fully offline, with no ads and no accounts.</p></div>
+    </div>
+
+    <h2>Every world adds a twist</h2>
+    <ul class="twists">
+      <li><b>Holes and spare bricks</b> that don't belong</li>
+      <li><b>Bolted bricks</b> you have to build around</li>
+      <li><b>Side-view builds</b> where every brick needs support</li>
+      <li><b>Colour pictures</b> where each brick must match</li>
+      <li><b>Strong walls</b> where the joints can't line up</li>
+      <li><b>Fog</b> that hides the picture until you build nearby</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap">
+  <nav><a href="privacy-policy.html">Privacy policy</a><span>Support: <a href="mailto:nuvyte00@gmail.com">nuvyte00@gmail.com</a></span></nav>
+  © 2026 Nuvyte
+</footer>
+</body>
+</html>
